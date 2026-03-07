@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useState, useCallback } from "react";
 import { Lang, translations } from "./i18n";
 
+type TranslationType = typeof translations.en | typeof translations.ar;
+
 type LanguageContextType = {
   lang: Lang;
-  t: typeof translations.en;
+  t: TranslationType;
   toggleLang: () => void;
   isRtl: boolean;
 };
