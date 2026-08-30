@@ -1,49 +1,49 @@
 import { useLang } from "@/lib/LanguageContext";
 import SectionWrapper from "./SectionWrapper";
 import { motion } from "framer-motion";
+import { BarChart3, LayoutDashboard, Code2, BrainCircuit } from "lucide-react";
 
-const skills = [
-  { name: "Python (Pandas, NumPy)", level: 85, color: "primary" },
-  { name: "SQL Server", level: 80, color: "primary" },
-  { name: "Power BI (DAX, Modeling)", level: 90, color: "accent" },
-  { name: "Excel (Power Query, Pivots)", level: 88, color: "primary" },
-  { name: "ETL Processes", level: 75, color: "accent" },
-  { name: "EDA", level: 82, color: "primary" },
-  { name: "Data Visualization", level: 88, color: "accent" },
-  { name: "Statistical Analysis", level: 78, color: "primary" },
-  { name: "Git & GitHub", level: 70, color: "accent" },
-];
+const icons = [BarChart3, LayoutDashboard, Code2, BrainCircuit];
 
 export default function Skills() {
   const { t } = useLang();
 
   return (
-    <SectionWrapper id="skills" alt>
-      <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">{t.skills.heading}</h2>
-      <div className="max-w-3xl mx-auto space-y-5">
-        {skills.map((skill, i) => (
-          <motion.div
-            key={skill.name}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
-          >
-            <div className="flex justify-between mb-1.5">
-              <span className="text-sm font-medium text-foreground">{skill.name}</span>
-              <span className="text-sm font-medium text-muted-foreground">{skill.level}%</span>
-            </div>
-            <div className="h-2.5 rounded-full bg-secondary overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: `${skill.level}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: i * 0.05 }}
-                className={`h-full rounded-full ${skill.color === "accent" ? "bg-accent" : "bg-primary"}`}
-              />
-            </div>
-          </motion.div>
-        ))}
+    <SectionWrapper id="skills" heading={t.skills.heading} kicker={t.skills.kicker}>
+      <div className="grid gap-6 md:grid-cols-2">
+        {t.skills.groups.map((group, i) => {
+          const Icon = icons[i];
+          const primaryGroup = i < 2;
+          return (
+            <motion.div
+              key={group.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+              className={`rounded-2xl border p-6 md:p-7 transition-all duration-300 hover:-translate-y-1 ${
+                primaryGroup ? "border-primary/35 card-elevated hover:border-primary/60" : "border-border bg-card hover:border-data/50"
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <div className={`rounded-xl p-2.5 ${primaryGroup ? "bg-primary/15 text-primary" : "bg-data/10 text-data"}`}>
+                  <Icon size={22} />
+                </div>
+                <h3 className="font-display text-lg md:text-xl font-bold text-card-foreground">{group.title}</h3>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg border border-border bg-secondary px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </SectionWrapper>
   );
