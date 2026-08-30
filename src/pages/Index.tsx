@@ -1,13 +1,13 @@
 import Navbar from "@/components/portfolio/Navbar";
 import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
-import Skills from "@/components/portfolio/Skills";
-import Experience from "@/components/portfolio/Experience";
 import Projects from "@/components/portfolio/Projects";
+import Skills from "@/components/portfolio/Skills";
 import DataTools from "@/components/portfolio/DataTools";
 import Workflow from "@/components/portfolio/Workflow";
+import Experience from "@/components/portfolio/Experience";
 import Education from "@/components/portfolio/Education";
-import Testimonials from "@/components/portfolio/Testimonials";
+import Certifications from "@/components/portfolio/Certifications";
 import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
 
@@ -15,16 +15,18 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <DataTools />
-      <Workflow />
-      <Education />
-      <Testimonials />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <DataTools />
+        <Workflow />
+        <Experience />
+        <Education />
+        <Certifications />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

@@ -7,43 +7,41 @@ export default function Experience() {
   const { t } = useLang();
 
   return (
-    <SectionWrapper id="experience">
-      <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">{t.experience.heading}</h2>
-      <div className="max-w-3xl mx-auto relative">
-        {/* Timeline line */}
-        <div className="absolute left-5 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
-        {t.experience.items.map((item, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className={`relative flex items-start gap-4 mb-10 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} md:text-${i % 2 === 0 ? "right" : "left"}`}
-          >
-            {/* Dot */}
-            <div className="absolute left-5 md:left-1/2 w-3 h-3 rounded-full bg-primary border-2 border-background -translate-x-1/2 mt-2 z-10" />
-            {/* Content */}
-            <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${i % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"}`}>
-              <div className="p-5 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
-                <div className="flex items-center gap-2 mb-2">
-                  <Briefcase size={16} className="text-primary" />
-                  <span className="text-xs font-medium text-primary">{item.period}</span>
+    <SectionWrapper id="experience" heading={t.experience.heading} kicker={t.experience.kicker}>
+      <div className="relative max-w-4xl">
+        <div className="absolute bottom-2 top-2 start-[15px] w-px bg-border md:start-[19px]" />
+        <div className="space-y-6">
+          {t.experience.items.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className="relative ps-12 md:ps-16"
+            >
+              <div className="absolute start-0 top-1 grid h-8 w-8 place-items-center rounded-full border border-border bg-card text-primary md:h-10 md:w-10">
+                <Briefcase size={16} />
+              </div>
+              <div className="rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">{item.period}</span>
+                  <span className="rounded-full bg-data/10 px-2.5 py-0.5 text-xs font-semibold text-data">{item.tag}</span>
                 </div>
-                <h3 className="font-display font-semibold text-card-foreground text-left">{item.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3 text-left">{item.company}</p>
-                <ul className="space-y-1.5 text-left">
+                <h3 className="mt-3 font-display text-lg md:text-xl font-bold text-card-foreground">{item.title}</h3>
+                <p className="mt-1 text-sm font-medium text-muted-foreground">{item.company}</p>
+                <ul className="mt-4 space-y-2">
                   {item.bullets.map((b, j) => (
-                    <li key={j} className="text-sm text-muted-foreground flex gap-2">
-                      <span className="text-primary mt-1 shrink-0">▸</span>
+                    <li key={j} className="flex items-start gap-2.5 text-[0.975rem] leading-relaxed text-muted-foreground">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-data" />
                       <span>{b}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );
