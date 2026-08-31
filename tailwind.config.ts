@@ -12,10 +12,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Space Grotesk"', "sans-serif"],
+        display: ["Manrope", "Inter", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
       colors: {
+        data: { DEFAULT: "hsl(var(--data))", foreground: "hsl(var(--data-foreground))" },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
