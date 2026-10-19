@@ -39,7 +39,7 @@ export default function Hero() {
             <a href="#projects" className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 glow-primary">
               {t.hero.cta_projects} <ArrowRight size={16} className="rtl:rotate-180" />
             </a>
-            <a href="/Baher_Azer_Resume.pdf" download className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3.5 text-sm font-semibold text-card-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-data/60">
+            <a href={`${import.meta.env.BASE_URL}Baher_Azer_Resume.pdf`} download className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3.5 text-sm font-semibold text-card-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-data/60">
               <Download size={16} /> {t.hero.cta_resume}
             </a>
           </motion.div>
