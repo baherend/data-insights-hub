@@ -110,7 +110,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-data;
   }
   .section-alt {
-    background-color: hsl(var(--section-alt));
+    background-color: hsl(var(--section-alt) / 0.55);
   }
   .glow-primary {
     box-shadow: var(--glow-primary);
@@ -119,7 +119,7 @@
     box-shadow: var(--glow-data);
   }
   .hero-bg {
-    background: var(--hero-gradient);
+    background: radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.10), transparent 55%), radial-gradient(circle at 80% 30%, hsl(var(--data) / 0.10), transparent 50%);
   }
   .card-elevated {
     background-color: hsl(var(--card-elevated));
