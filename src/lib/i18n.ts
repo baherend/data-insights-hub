@@ -16,9 +16,9 @@ export const translations = {
       greeting: "Hello, I'm",
       name: "Baher Mikhael Habib Azer",
       positioning: "Turning Data Into Decisions.",
-      title: "Data Analyst | Business Intelligence | Applied AI",
+      title: "Junior Data Scientist | Data Analyst | Applied AI",
       summary:
-        "Data Analyst specializing in transforming raw data into actionable business insights using Python, SQL, Power BI, Excel, statistical analysis, and modern AI techniques.",
+        "Junior Data Scientist and Data Analyst turning raw data into actionable insights using Python, SQL, machine learning, Power BI, and modern AI techniques such as computer vision, LLMs, and RAG.",
       differentiator:
         "Combining analytical thinking with a background in Behavioral Psychology to understand both the data and the human behavior behind it.",
       cta_projects: "View Projects",
@@ -38,12 +38,12 @@ export const translations = {
     about: {
       heading: "About Me",
       kicker: "Analytics with a human lens",
-      p1: "I am a Data Analyst with a background in Behavioral Psychology, focused on turning complex datasets into clear insights that support better decisions.",
+      p1: "I am a Junior Data Scientist and Data Analyst with a background in Behavioral Psychology, focused on turning complex datasets into clear insights that support better decisions.",
       p2: "My work covers the analytics lifecycle — from data cleaning and exploratory analysis to SQL querying, dashboard development, statistical analysis, predictive analytics, and data storytelling.",
-      p3: "I work primarily with Python, SQL, Power BI, and Excel, while applying machine learning and AI techniques when they provide real analytical value.",
+      p3: "I work with Python (Pandas, NumPy, scikit-learn, Plotly), SQL, Power BI, and Excel, and build machine learning and AI systems with PyTorch, TensorFlow/Keras, OpenCV, and LLMs.",
       p4: "My psychology background gives me an additional perspective when analyzing customer behavior, trends, patterns, and human-centered data.",
       cards: [
-        { label: "Data Analysis", value: "Business Intelligence" },
+        { label: "Data Science", value: "Machine Learning" },
         { label: "Psychology", value: "Behavioral Insight" },
         { label: "Applied AI", value: "Intelligent Analytics" },
       ],
@@ -62,11 +62,11 @@ export const translations = {
         },
         {
           title: "Programming & Data",
-          items: ["Python", "Pandas", "NumPy", "SQL", "SQL Server", "Jupyter Notebook", "ETL Pipelines"],
+          items: ["Python", "Pandas", "NumPy", "scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SQL", "SQL Server", "Jupyter Notebook", "Git & GitHub", "ETL Pipelines"],
         },
         {
           title: "AI & Machine Learning",
-          items: ["Machine Learning", "TensorFlow", "Keras", "CNN", "LSTM", "NLP", "RAG", "Embeddings", "Computer Vision"],
+          items: ["Machine Learning", "scikit-learn", "PyTorch", "TensorFlow", "Keras", "CNN", "LSTM", "Computer Vision", "OpenCV", "NLP", "LLMs", "RAG", "Embeddings"],
         },
       ],
     },
@@ -108,10 +108,10 @@ export const translations = {
           ],
         },
         {
-          title: "Technical Support Specialist",
-          company: "WE Communications",
+          title: "Technical Support Specialist (Voice Account)",
+          company: "WE Communications (Telecom)",
           period: "2023 – 2024",
-          tag: "Operations",
+          tag: "Telecom",
           bullets: [
             "Resolved 40+ technical issues daily with approximately 95% CSAT.",
             "Identified recurring technical trends across support cases.",
@@ -135,59 +135,150 @@ export const translations = {
       labels: { problem: "Problem", built: "What I built", capabilities: "Key capabilities", tech: "Technology", repo: "View on GitHub", noRepo: "Private / no public repository" },
       items: [
         {
-          category: "Applied AI · Football Analytics",
-          title: "Football Analytics RAG System",
-          subtitle: "FIFA World Cup 2022 · StatsBomb data",
-          problem: "Match event data is rich but hard to explore for non-technical users who just want to ask a question.",
-          built: "Built a Retrieval-Augmented Generation system over StatsBomb FIFA World Cup 2022 data that allows users to ask natural-language questions about matches, players, and teams.",
-          capabilities: ["64 World Cup matches", "Hybrid information retrieval", "BM25 lexical retrieval", "Dense embeddings", "Reciprocal Rank Fusion", "Structured & semantic query routing", "ChromaDB", "LLM response generation", "Streamlit interface"],
-          tech: ["Python", "RAG", "ChromaDB", "BM25", "Embeddings", "Streamlit", "OpenRouter"],
-          github: "https://github.com/baherend/Football-Analytics-RAG-FULL",
-          featured: true,
+          "category": "Applied AI · Multimodal",
+          "title": "Interview IQ: Multimodal Interview Intelligence System",
+          "subtitle": "Graduation project · speech, text, and visual signals",
+          "problem": "Interview evaluation relies on subjective impressions rather than structured signals.",
+          "built": "Developed an AI platform that fuses speech, text, and visual signals into unified performance scores through separate NLP, computer vision, and audio pipelines, with a FastAPI backend.",
+          "capabilities": [
+            "Speech, text, and visual signal fusion",
+            "NLP, computer vision, and audio pipelines",
+            "LoRA fine-tuning of transformer models",
+            "FastAPI backend"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "Librosa",
+            "Transformers",
+            "FastAPI"
+          ],
+          "github": "https://github.com/baherend/InterviewIQ",
+          "featured": true
         },
         {
-          category: "Data Analytics",
-          title: "E-Commerce Sales Analysis",
-          subtitle: "Exploratory analysis, segmentation & business insights",
-          problem: "Understanding what drives revenue, which customers matter most, and how demand moves over time.",
-          built: "End-to-end analytics project in Python covering exploratory data analysis, customer segmentation, market basket analysis, and time-series analysis of sales behavior.",
-          capabilities: ["Exploratory Data Analysis", "Customer Segmentation", "Market Basket Analysis", "Time-Series Analysis", "Customer Behavior", "Business Insights"],
-          tech: ["Python", "Pandas", "Jupyter Notebook"],
-          github: "https://github.com/baherend/E-Commerce-Sales-Analysis",
-          featured: true,
+          "category": "Deep Learning · Computer Vision",
+          "title": "Smart-City CCTV Violence Detection System",
+          "subtitle": "ResNet18 + LSTM video classification",
+          "problem": "Manual CCTV monitoring cannot scale across city-wide camera networks.",
+          "built": "Built a ResNet18 + LSTM video classifier in PyTorch for Normal, Violence, and Weaponized categories, reaching 99.8% test accuracy on the dataset's pre-segmented 1-second clips and evaluating full-length clips (67.1%) to expose generalization limits.",
+          "capabilities": [
+            "Normal / Violence / Weaponized classes",
+            "99.8% test accuracy on 1-second clips",
+            "67.1% on full-length clips (generalization check)",
+            "Interactive Plotly probability timeline"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "ResNet18",
+            "LSTM",
+            "OpenCV",
+            "scikit-learn",
+            "Plotly"
+          ],
+          "github": "https://github.com/baherend/Smart-City-CCTV-Violence-Detection",
+          "featured": true
         },
         {
-          category: "Business Intelligence",
-          title: "End-to-End Data Analysis & Visualization",
-          subtitle: "SQL Server database + Excel KPI dashboard",
-          problem: "Reporting spread across flat files with no consistent data model or KPI definitions.",
-          built: "Designed a relational database using SQL Server and developed an interactive Excel dashboard for KPI analysis and business insights.",
-          capabilities: ["SQL Server", "Data Modeling", "Excel", "Dashboard Development", "KPIs", "Business Insights"],
-          tech: ["SQL Server", "Excel", "Power Query"],
-          github: "",
-          featured: false,
+          "category": "Applied AI · Football Analytics",
+          "title": "Football Analytics RAG System",
+          "subtitle": "FIFA World Cup 2022 · StatsBomb data",
+          "problem": "Match event data is rich but hard to explore for non-technical users who just want to ask a question.",
+          "built": "Built a Retrieval-Augmented Generation system over StatsBomb FIFA World Cup 2022 data that allows users to ask natural-language questions about matches, players, and teams.",
+          "capabilities": [
+            "64 World Cup matches, 2,835 indexed documents",
+            "Hybrid information retrieval",
+            "BM25 lexical retrieval",
+            "Dense embeddings",
+            "Reciprocal Rank Fusion",
+            "Structured & semantic query routing",
+            "ChromaDB",
+            "LLM response generation",
+            "Streamlit interface"
+          ],
+          "tech": [
+            "Python",
+            "RAG",
+            "ChromaDB",
+            "BM25",
+            "Embeddings",
+            "Streamlit",
+            "OpenRouter"
+          ],
+          "github": "https://github.com/baherend/Football-Analytics-RAG-FULL",
+          "featured": true
         },
         {
-          category: "Deep Learning · Computer Vision",
-          title: "Smart-City CCTV Violence Detection System",
-          subtitle: "Video classification pipeline",
-          problem: "Manual CCTV monitoring cannot scale across city-wide camera networks.",
-          built: "Built a CNN + LSTM deep-learning pipeline to classify video into Normal, Violence, and Weaponized categories, reaching 80%+ validation accuracy.",
-          capabilities: ["Normal / Violence / Weaponized classes", "80%+ validation accuracy", "Frame sequence modeling"],
-          tech: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN", "LSTM"],
-          github: "",
-          featured: false,
+          "category": "Data Analytics",
+          "title": "E-Commerce Sales Analysis",
+          "subtitle": "Exploratory analysis, segmentation & business insights",
+          "problem": "Understanding what drives revenue, which customers matter most, and how demand moves over time.",
+          "built": "End-to-end analytics project in Python on ~542K retail transactions covering data cleaning, exploratory data analysis, customer segmentation, market basket analysis, and time-based sales patterns.",
+          "capabilities": [
+            "~542K transactions analyzed",
+            "5,268 duplicates removed, 9,071 returns isolated",
+            "Exploratory Data Analysis",
+            "Customer Segmentation (3 tiers)",
+            "Market Basket Analysis",
+            "Business Insights"
+          ],
+          "tech": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook"
+          ],
+          "github": "https://github.com/baherend/E-Commerce-Sales-Analysis",
+          "featured": true
         },
         {
-          category: "Applied AI · Multimodal",
-          title: "Multimodal Interview Intelligence System",
-          subtitle: "Speech, text, and visual signal analysis",
-          problem: "Interview evaluation relies on subjective impressions rather than structured signals.",
-          built: "Developed an AI platform combining speech, text, and visual signals using NLP, computer vision, and speech-processing pipelines.",
-          capabilities: ["Speech processing", "NLP text analysis", "Computer vision signals"],
-          tech: ["Python", "OpenCV", "Librosa", "Transformers", "BERT", "GPT"],
-          github: "",
-          featured: false,
+          "category": "Applied AI · Audio Signal Analysis",
+          "title": "Audio Doctor: Call Review Prototype",
+          "subtitle": "Arabic call-center calls · acoustic evidence only",
+          "problem": "Reviewing recorded customer-service calls manually is slow, and team leaders need objective evidence of call quality.",
+          "built": "Built a Streamlit prototype that lets call-center team leaders review recorded Arabic calls from acoustic and timing evidence only, with exportable JSON/PDF call reviews.",
+          "capabilities": [
+            "Stereo channel validation",
+            "RMS-based activity gating",
+            "Windowed vocal-activation classification (Wav2Vec2)",
+            "Hold and dead-air detection",
+            "Unit-tested pipeline"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "Wav2Vec2",
+            "Streamlit",
+            "pytest"
+          ],
+          "github": "https://github.com/baherend/audio-review",
+          "featured": false
+        },
+        {
+          "category": "Business Intelligence",
+          "title": "End-to-End Data Analysis & Visualization",
+          "subtitle": "SQL Server database + Excel KPI dashboard",
+          "problem": "Reporting spread across flat files with no consistent data model or KPI definitions.",
+          "built": "Designed a relational database using SQL Server and developed an interactive Excel dashboard for KPI analysis and business insights.",
+          "capabilities": [
+            "SQL Server",
+            "Data Modeling",
+            "Excel",
+            "Dashboard Development",
+            "KPIs",
+            "Business Insights"
+          ],
+          "tech": [
+            "SQL Server",
+            "Excel",
+            "Power Query"
+          ],
+          "github": "",
+          "featured": false
         },
       ],
     },
@@ -215,12 +306,12 @@ export const translations = {
     },
     contact: {
       heading: "Get In Touch",
-      kicker: "Open to Data Analyst and Business Intelligence roles",
+      kicker: "Open to Data Scientist, Data Analyst and BI roles",
       blurb: "The fastest way to reach me is email or LinkedIn. I usually reply within a day.",
       emailCta: "Email Me",
       whatsappCta: "WhatsApp",
     },
-    footer: { rights: "All rights reserved.", quickLinks: "Quick Links", contactInfo: "Contact Info", tagline: "Data Analyst • Business Intelligence • Applied AI" },
+    footer: { rights: "All rights reserved.", quickLinks: "Quick Links", contactInfo: "Contact Info", tagline: "Data Scientist • Data Analyst • Applied AI" },
   },
   ar: {
     nav: {
@@ -237,9 +328,9 @@ export const translations = {
       greeting: "مرحباً، أنا",
       name: "باهر ميخائيل حبيب عازر",
       positioning: "أحوّل البيانات إلى قرارات.",
-      title: "محلل بيانات | ذكاء الأعمال | الذكاء الاصطناعي التطبيقي",
+      title: "عالم بيانات مبتدئ | محلل بيانات | الذكاء الاصطناعي التطبيقي",
       summary:
-        "محلل بيانات متخصص في تحويل البيانات الخام إلى رؤى عملية تدعم الأعمال باستخدام Python و SQL و Power BI و Excel والتحليل الإحصائي وتقنيات الذكاء الاصطناعي الحديثة.",
+        "عالم بيانات مبتدئ ومحلل بيانات أحوّل البيانات الخام إلى رؤى عملية باستخدام Python و SQL والتعلم الآلي و Power BI وتقنيات الذكاء الاصطناعي الحديثة مثل الرؤية الحاسوبية والنماذج اللغوية الكبيرة و RAG.",
       differentiator:
         "أجمع بين التفكير التحليلي وخلفية في علم النفس السلوكي لفهم البيانات والسلوك البشري الذي يقف خلفها.",
       cta_projects: "استعرض المشاريع",
@@ -259,12 +350,12 @@ export const translations = {
     about: {
       heading: "عني",
       kicker: "تحليلات بمنظور إنساني",
-      p1: "أنا محلل بيانات بخلفية في علم النفس السلوكي، أركز على تحويل مجموعات البيانات المعقدة إلى رؤى واضحة تدعم اتخاذ قرارات أفضل.",
+      p1: "أنا عالم بيانات مبتدئ ومحلل بيانات بخلفية في علم النفس السلوكي، أركز على تحويل مجموعات البيانات المعقدة إلى رؤى واضحة تدعم اتخاذ قرارات أفضل.",
       p2: "يغطي عملي دورة حياة التحليل كاملة — من تنظيف البيانات والتحليل الاستكشافي إلى استعلامات SQL وتطوير لوحات المعلومات والتحليل الإحصائي والتحليلات التنبؤية وسرد البيانات.",
-      p3: "أعمل بشكل أساسي باستخدام Python و SQL و Power BI و Excel، مع تطبيق تقنيات التعلم الآلي والذكاء الاصطناعي عندما تقدم قيمة تحليلية حقيقية.",
+      p3: "أعمل باستخدام Python (Pandas و NumPy و scikit-learn و Plotly) و SQL و Power BI و Excel، وأبني أنظمة تعلم آلي وذكاء اصطناعي باستخدام PyTorch و TensorFlow/Keras و OpenCV والنماذج اللغوية الكبيرة.",
       p4: "خلفيتي في علم النفس تمنحني منظوراً إضافياً عند تحليل سلوك العملاء والاتجاهات والأنماط والبيانات المرتكزة على الإنسان.",
       cards: [
-        { label: "تحليل البيانات", value: "ذكاء الأعمال" },
+        { label: "علم البيانات", value: "التعلم الآلي" },
         { label: "علم النفس", value: "رؤية سلوكية" },
         { label: "الذكاء الاصطناعي التطبيقي", value: "تحليلات ذكية" },
       ],
@@ -283,11 +374,11 @@ export const translations = {
         },
         {
           title: "البرمجة والبيانات",
-          items: ["Python", "Pandas", "NumPy", "SQL", "SQL Server", "Jupyter Notebook", "خطوط ETL"],
+          items: ["Python", "Pandas", "NumPy", "scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SQL", "SQL Server", "Jupyter Notebook", "Git & GitHub", "خطوط ETL"],
         },
         {
           title: "الذكاء الاصطناعي والتعلم الآلي",
-          items: ["التعلم الآلي", "TensorFlow", "Keras", "CNN", "LSTM", "معالجة اللغة", "RAG", "التمثيلات المتجهة", "الرؤية الحاسوبية"],
+          items: ["التعلم الآلي", "scikit-learn", "PyTorch", "TensorFlow", "Keras", "CNN", "LSTM", "الرؤية الحاسوبية", "OpenCV", "معالجة اللغة", "النماذج اللغوية الكبيرة", "RAG", "التمثيلات المتجهة"],
         },
       ],
     },
@@ -326,10 +417,10 @@ export const translations = {
           bullets: ["تحليل أنماط البيانات السلوكية لأكثر من 15 حالة.", "استخدام مقاييس كمية لتتبع تقدم العلاج."],
         },
         {
-          title: "أخصائي دعم فني",
-          company: "WE Communications",
+          title: "أخصائي دعم فني (خدمة الصوت)",
+          company: "WE Communications (اتصالات)",
           period: "2023 – 2024",
-          tag: "تشغيل",
+          tag: "اتصالات",
           bullets: ["حل أكثر من 40 مشكلة فنية يومياً برضا عملاء يقارب 95%.", "تحديد الاتجاهات الفنية المتكررة."],
         },
         {
@@ -347,59 +438,150 @@ export const translations = {
       labels: { problem: "المشكلة", built: "ما بنيته", capabilities: "أهم القدرات", tech: "التقنيات", repo: "عرض على GitHub", noRepo: "مستودع غير عام" },
       items: [
         {
-          category: "ذكاء اصطناعي تطبيقي · تحليلات كرة القدم",
-          title: "نظام RAG لتحليلات كرة القدم",
-          subtitle: "كأس العالم 2022 · بيانات StatsBomb",
-          problem: "بيانات أحداث المباريات غنية لكن يصعب استكشافها على غير المتخصصين.",
-          built: "بناء نظام توليد معزز بالاسترجاع على بيانات StatsBomb لكأس العالم 2022 يتيح طرح أسئلة بلغة طبيعية عن المباريات واللاعبين والفرق.",
-          capabilities: ["64 مباراة", "استرجاع هجين", "استرجاع BM25", "تمثيلات متجهة كثيفة", "دمج الترتيب التبادلي", "توجيه الاستعلامات", "ChromaDB", "توليد الردود بنموذج لغوي", "واجهة Streamlit"],
-          tech: ["Python", "RAG", "ChromaDB", "BM25", "Embeddings", "Streamlit", "OpenRouter"],
-          github: "https://github.com/baherend/Football-Analytics-RAG-FULL",
-          featured: true,
+          "category": "ذكاء اصطناعي تطبيقي · متعدد الوسائط",
+          "title": "Interview IQ: نظام ذكاء المقابلات متعدد الوسائط",
+          "subtitle": "مشروع التخرج · إشارات الصوت والنص والصورة",
+          "problem": "تقييم المقابلات يعتمد على انطباعات شخصية بدل إشارات منظمة.",
+          "built": "تطوير منصة ذكاء اصطناعي تدمج إشارات الكلام والنص والصورة في درجات أداء موحدة عبر مسارات منفصلة لمعالجة اللغة والرؤية الحاسوبية والصوت، مع واجهة خلفية بـ FastAPI.",
+          "capabilities": [
+            "دمج إشارات الكلام والنص والصورة",
+            "مسارات معالجة اللغة والرؤية الحاسوبية والصوت",
+            "ضبط نماذج Transformers بتقنية LoRA",
+            "واجهة خلفية FastAPI"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "Librosa",
+            "Transformers",
+            "FastAPI"
+          ],
+          "github": "https://github.com/baherend/InterviewIQ",
+          "featured": true
         },
         {
-          category: "تحليل بيانات",
-          title: "تحليل مبيعات التجارة الإلكترونية",
-          subtitle: "تحليل استكشافي وتقسيم عملاء ورؤى أعمال",
-          problem: "فهم محركات الإيرادات وأهم شرائح العملاء وتغير الطلب عبر الزمن.",
-          built: "مشروع تحليلي متكامل بلغة Python يغطي التحليل الاستكشافي وتقسيم العملاء وتحليل سلة المشتريات وتحليل السلاسل الزمنية.",
-          capabilities: ["التحليل الاستكشافي", "تقسيم العملاء", "تحليل سلة المشتريات", "تحليل السلاسل الزمنية", "سلوك العملاء", "رؤى الأعمال"],
-          tech: ["Python", "Pandas", "Jupyter Notebook"],
-          github: "https://github.com/baherend/E-Commerce-Sales-Analysis",
-          featured: true,
+          "category": "تعلم عميق · رؤية حاسوبية",
+          "title": "نظام كشف العنف من كاميرات المدن الذكية",
+          "subtitle": "تصنيف الفيديو بـ ResNet18 + LSTM",
+          "problem": "المراقبة اليدوية للكاميرات لا تتوسع على مستوى المدينة.",
+          "built": "بناء مصنّف فيديو ResNet18 + LSTM باستخدام PyTorch للفئات: عادي، عنف، مسلح، بدقة اختبار 99.8% على مقاطع الثانية الواحدة الجاهزة، مع تقييم على المقاطع الكاملة (67.1%) لكشف حدود التعميم.",
+          "capabilities": [
+            "تصنيف ثلاثي الفئات",
+            "دقة اختبار 99.8% على مقاطع الثانية الواحدة",
+            "67.1% على المقاطع الكاملة (اختبار التعميم)",
+            "مخطط احتمالات تفاعلي بـ Plotly"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "ResNet18",
+            "LSTM",
+            "OpenCV",
+            "scikit-learn",
+            "Plotly"
+          ],
+          "github": "https://github.com/baherend/Smart-City-CCTV-Violence-Detection",
+          "featured": true
         },
         {
-          category: "ذكاء الأعمال",
-          title: "تحليل وتصور بيانات متكامل",
-          subtitle: "قاعدة بيانات SQL Server ولوحة Excel",
-          problem: "تقارير متفرقة بين ملفات دون نموذج بيانات موحد أو مؤشرات واضحة.",
-          built: "تصميم قاعدة بيانات علائقية باستخدام SQL Server وتطوير لوحة Excel تفاعلية لتحليل مؤشرات الأداء ورؤى الأعمال.",
-          capabilities: ["SQL Server", "نمذجة البيانات", "Excel", "تطوير لوحات المعلومات", "مؤشرات الأداء", "رؤى الأعمال"],
-          tech: ["SQL Server", "Excel", "Power Query"],
-          github: "",
-          featured: false,
+          "category": "ذكاء اصطناعي تطبيقي · تحليلات كرة القدم",
+          "title": "نظام RAG لتحليلات كرة القدم",
+          "subtitle": "كأس العالم 2022 · بيانات StatsBomb",
+          "problem": "بيانات أحداث المباريات غنية لكن يصعب استكشافها على غير المتخصصين.",
+          "built": "بناء نظام توليد معزز بالاسترجاع على بيانات StatsBomb لكأس العالم 2022 يتيح طرح أسئلة بلغة طبيعية عن المباريات واللاعبين والفرق.",
+          "capabilities": [
+            "64 مباراة و2,835 وثيقة مفهرسة",
+            "استرجاع هجين",
+            "استرجاع BM25",
+            "تمثيلات متجهة كثيفة",
+            "دمج الترتيب التبادلي",
+            "توجيه الاستعلامات",
+            "ChromaDB",
+            "توليد الردود بنموذج لغوي",
+            "واجهة Streamlit"
+          ],
+          "tech": [
+            "Python",
+            "RAG",
+            "ChromaDB",
+            "BM25",
+            "Embeddings",
+            "Streamlit",
+            "OpenRouter"
+          ],
+          "github": "https://github.com/baherend/Football-Analytics-RAG-FULL",
+          "featured": true
         },
         {
-          category: "تعلم عميق · رؤية حاسوبية",
-          title: "نظام كشف العنف من كاميرات المدن الذكية",
-          subtitle: "تصنيف مقاطع الفيديو",
-          problem: "المراقبة اليدوية للكاميرات لا تتوسع على مستوى المدينة.",
-          built: "بناء مسار تعلم عميق CNN + LSTM لتصنيف الفيديو إلى: عادي، عنف، مسلح، بدقة تحقق تجاوزت 80%.",
-          capabilities: ["تصنيف ثلاثي الفئات", "دقة تحقق أكثر من 80%", "نمذجة تسلسل الإطارات"],
-          tech: ["Python", "TensorFlow", "Keras", "OpenCV", "CNN", "LSTM"],
-          github: "",
-          featured: false,
+          "category": "تحليل بيانات",
+          "title": "تحليل مبيعات التجارة الإلكترونية",
+          "subtitle": "تحليل استكشافي وتقسيم عملاء ورؤى أعمال",
+          "problem": "فهم محركات الإيرادات وأهم شرائح العملاء وتغير الطلب عبر الزمن.",
+          "built": "مشروع تحليلي متكامل بلغة Python على نحو 542 ألف عملية بيع يغطي تنظيف البيانات والتحليل الاستكشافي وتقسيم العملاء وتحليل سلة المشتريات وأنماط المبيعات عبر الزمن.",
+          "capabilities": [
+            "تحليل نحو 542 ألف عملية",
+            "إزالة 5,268 تكرار وعزل 9,071 مرتجع",
+            "التحليل الاستكشافي",
+            "تقسيم العملاء (3 شرائح)",
+            "تحليل سلة المشتريات",
+            "رؤى الأعمال"
+          ],
+          "tech": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook"
+          ],
+          "github": "https://github.com/baherend/E-Commerce-Sales-Analysis",
+          "featured": true
         },
         {
-          category: "ذكاء اصطناعي تطبيقي · متعدد الوسائط",
-          title: "نظام ذكاء المقابلات متعدد الوسائط",
-          subtitle: "تحليل إشارات الصوت والنص والصورة",
-          problem: "تقييم المقابلات يعتمد على انطباعات شخصية بدل إشارات منظمة.",
-          built: "تطوير منصة ذكاء اصطناعي تجمع إشارات الكلام والنص والصورة باستخدام معالجة اللغة والرؤية الحاسوبية ومعالجة الصوت.",
-          capabilities: ["معالجة الكلام", "تحليل النصوص", "إشارات الرؤية الحاسوبية"],
-          tech: ["Python", "OpenCV", "Librosa", "Transformers", "BERT", "GPT"],
-          github: "",
-          featured: false,
+          "category": "ذكاء اصطناعي تطبيقي · تحليل الإشارات الصوتية",
+          "title": "Audio Doctor: نموذج مراجعة المكالمات",
+          "subtitle": "مكالمات مراكز الاتصال العربية · أدلة صوتية فقط",
+          "problem": "مراجعة مكالمات خدمة العملاء المسجلة يدوياً بطيئة، ويحتاج قادة الفرق إلى أدلة موضوعية على جودة المكالمة.",
+          "built": "بناء نموذج أولي بـ Streamlit يتيح لقادة فرق مراكز الاتصال مراجعة المكالمات العربية المسجلة اعتماداً على الأدلة الصوتية والزمنية فقط، مع تقارير JSON/PDF قابلة للتصدير.",
+          "capabilities": [
+            "التحقق من قنوات الاستريو",
+            "تحديد النشاط بقياس RMS",
+            "تصنيف النشاط الصوتي بنوافذ زمنية (Wav2Vec2)",
+            "كشف الانتظار والصمت",
+            "مسار معالجة مغطى باختبارات"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "Wav2Vec2",
+            "Streamlit",
+            "pytest"
+          ],
+          "github": "https://github.com/baherend/audio-review",
+          "featured": false
+        },
+        {
+          "category": "ذكاء الأعمال",
+          "title": "تحليل وتصور بيانات متكامل",
+          "subtitle": "قاعدة بيانات SQL Server ولوحة Excel",
+          "problem": "تقارير متفرقة بين ملفات دون نموذج بيانات موحد أو مؤشرات واضحة.",
+          "built": "تصميم قاعدة بيانات علائقية باستخدام SQL Server وتطوير لوحة Excel تفاعلية لتحليل مؤشرات الأداء ورؤى الأعمال.",
+          "capabilities": [
+            "SQL Server",
+            "نمذجة البيانات",
+            "Excel",
+            "تطوير لوحات المعلومات",
+            "مؤشرات الأداء",
+            "رؤى الأعمال"
+          ],
+          "tech": [
+            "SQL Server",
+            "Excel",
+            "Power Query"
+          ],
+          "github": "",
+          "featured": false
         },
       ],
     },
@@ -427,11 +609,11 @@ export const translations = {
     },
     contact: {
       heading: "تواصل معي",
-      kicker: "متاح لفرص تحليل البيانات وذكاء الأعمال",
+      kicker: "متاح لفرص علم البيانات وتحليل البيانات وذكاء الأعمال",
       blurb: "أسرع طريقة للتواصل هي البريد الإلكتروني أو لينكدإن. أرد عادةً خلال يوم.",
       emailCta: "أرسل بريداً",
       whatsappCta: "واتساب",
     },
-    footer: { rights: "جميع الحقوق محفوظة.", quickLinks: "روابط سريعة", contactInfo: "معلومات التواصل", tagline: "محلل بيانات • ذكاء الأعمال • الذكاء الاصطناعي التطبيقي" },
+    footer: { rights: "جميع الحقوق محفوظة.", quickLinks: "روابط سريعة", contactInfo: "معلومات التواصل", tagline: "عالم بيانات • محلل بيانات • الذكاء الاصطناعي التطبيقي" },
   },
 } as const;
