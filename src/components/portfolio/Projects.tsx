@@ -5,31 +5,15 @@ import { Github, Lock, Star } from "lucide-react";
 
 type Project = (typeof import("@/lib/i18n").translations)["en"]["projects"]["items"][number];
 
-function ProjectVisual({ index, featured }: { index: number; featured: boolean }) {
-  const bars = [[38, 62, 48, 80, 56, 72], [55, 40, 68, 50, 84, 62], [45, 70, 52, 60, 76, 44]][index % 3];
+function ProjectVisual({ project, featured }: { project: Project; featured: boolean }) {
   return (
-    <div className={`card-elevated rounded-xl border border-border p-4 ${featured ? "min-h-[190px]" : "min-h-[140px]"}`} aria-hidden="true">
-      <div className="flex items-center gap-1.5">
-        <span className="h-2 w-2 rounded-full bg-primary/70" />
-        <span className="h-2 w-2 rounded-full bg-data/70" />
-        <span className="h-2 w-2 rounded-full bg-muted-foreground/40" />
-      </div>
-      <div className="mt-4 flex h-24 items-end gap-2">
-        {bars.map((h, i) => (
-          <motion.div
-            key={i}
-            initial={{ height: 0 }}
-            whileInView={{ height: `${h}%` }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: i * 0.06 }}
-            className={`flex-1 rounded-t-md ${i % 2 ? "bg-primary/50" : "bg-data/50"}`}
-          />
-        ))}
-      </div>
-      <div className="mt-4 space-y-2">
-        <div className="h-1.5 w-3/4 rounded-full bg-border" />
-        <div className="h-1.5 w-1/2 rounded-full bg-border" />
-      </div>
+    <div className={`overflow-hidden rounded-xl border border-border bg-secondary ${featured ? "min-h-[190px]" : "min-h-[140px]"}`}>
+      <img
+        src={project.image}
+        alt={project.imageAlt}
+        loading="lazy"
+        className={`h-full w-full object-cover ${featured ? "min-h-[190px]" : "min-h-[140px]"}`}
+      />
     </div>
   );
 }
@@ -48,6 +32,7 @@ function ProjectCard({ project, index, featured }: { project: Project; index: nu
         featured ? "border-primary/40 hover:border-primary/70 hover:glow-primary" : "border-border hover:border-data/50"
       }`}
     >
+      {!featured && <div className="mb-5"><ProjectVisual project={project} featured={false} /></div>}
       <div className={featured ? "grid gap-8 lg:grid-cols-[1.35fr_0.65fr]" : ""}>
         <div>
           <div className="flex flex-wrap items-center gap-3">
@@ -114,7 +99,7 @@ function ProjectCard({ project, index, featured }: { project: Project; index: nu
           </div>
         </div>
 
-        {featured && <ProjectVisual index={index} featured />}
+        {featured && <ProjectVisual project={project} featured />}
       </div>
     </motion.article>
   );
