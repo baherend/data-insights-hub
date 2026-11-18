@@ -16,11 +16,11 @@ export const translations = {
       greeting: "Hello, I'm",
       name: "Baher Mikhael Habib Azer",
       positioning: "Turning Data Into Decisions.",
-      title: "Junior Data Scientist | Data Analyst | Applied AI",
+      title: "Junior Data Analyst",
       summary:
-        "Junior Data Scientist and Data Analyst turning raw data into actionable insights using Python, SQL, machine learning, Power BI, and modern AI techniques such as computer vision, LLMs, and RAG.",
+        "Junior Data Analyst with a background in Psychology and hands-on project experience in data cleaning, exploratory analysis, customer segmentation, and football analytics. I use Python, SQL, Power BI, and Excel to uncover patterns and communicate findings that support informed decisions.",
       differentiator:
-        "Combining analytical thinking with a background in Behavioral Psychology to understand both the data and the human behavior behind it.",
+        "Combining analytical thinking, behavioral understanding, and clear communication to interpret data in its human and business context.",
       cta_projects: "View Projects",
       cta_resume: "Download Resume",
       cta_linkedin: "LinkedIn",
@@ -38,14 +38,14 @@ export const translations = {
     about: {
       heading: "About Me",
       kicker: "Analytics with a human lens",
-      p1: "I am a Junior Data Scientist and Data Analyst with a background in Behavioral Psychology, focused on turning complex datasets into clear insights that support better decisions.",
-      p2: "My work covers the analytics lifecycle — from data cleaning and exploratory analysis to SQL querying, dashboard development, statistical analysis, predictive analytics, and data storytelling.",
-      p3: "I work with Python (Pandas, NumPy, scikit-learn, Plotly), SQL, Power BI, and Excel, and build machine learning and AI systems with PyTorch, TensorFlow/Keras, OpenCV, and LLMs.",
-      p4: "My psychology background gives me an additional perspective when analyzing customer behavior, trends, patterns, and human-centered data.",
+      p1: "I am a Junior Data Analyst with a background in Psychology, focused on exploring data, identifying meaningful patterns, and turning findings into clear insights that support better decisions.",
+      p2: "My project work spans data cleaning, exploratory data analysis, customer segmentation, SQL database querying, KPI reporting, and dashboard development — from preparing raw data to communicating practical findings.",
+      p3: "I use Python (Pandas, NumPy, Matplotlib, Seaborn, and Plotly), SQL, Power BI, and Excel for analysis and visualization. I also have project experience applying machine learning and AI techniques.",
+      p4: "My academic background in Psychology, along with experience in behavioral support and children’s skill development, strengthened my ability to observe patterns, track progress, and communicate findings with empathy and clarity.",
       cards: [
-        { label: "Data Science", value: "Machine Learning" },
-        { label: "Psychology", value: "Behavioral Insight" },
-        { label: "Applied AI", value: "Intelligent Analytics" },
+        { label: "Data Analytics", value: "Insight Generation" },
+        { label: "Psychology", value: "Behavioral Understanding" },
+        { label: "Business Intelligence", value: "Reporting & Dashboards" },
       ],
     },
     skills: {
@@ -306,12 +306,12 @@ export const translations = {
     },
     contact: {
       heading: "Get In Touch",
-      kicker: "Open to Data Scientist, Data Analyst and BI roles",
+      kicker: "Open to Junior Data Analyst, Data Analyst and BI opportunities",
       blurb: "The fastest way to reach me is email or LinkedIn. I usually reply within a day.",
       emailCta: "Email Me",
       whatsappCta: "WhatsApp",
     },
-    footer: { rights: "All rights reserved.", quickLinks: "Quick Links", contactInfo: "Contact Info", tagline: "Data Scientist • Data Analyst • Applied AI" },
+    footer: { rights: "All rights reserved.", quickLinks: "Quick Links", contactInfo: "Contact Info", tagline: "Junior Data Analyst • Data Analytics • Business Intelligence" },
   },
   ar: {
     nav: {
@@ -328,11 +328,11 @@ export const translations = {
       greeting: "مرحباً، أنا",
       name: "باهر ميخائيل حبيب عازر",
       positioning: "أحوّل البيانات إلى قرارات.",
-      title: "عالم بيانات مبتدئ | محلل بيانات | الذكاء الاصطناعي التطبيقي",
+      title: "محلل بيانات مبتدئ",
       summary:
-        "عالم بيانات مبتدئ ومحلل بيانات أحوّل البيانات الخام إلى رؤى عملية باستخدام Python و SQL والتعلم الآلي و Power BI وتقنيات الذكاء الاصطناعي الحديثة مثل الرؤية الحاسوبية والنماذج اللغوية الكبيرة و RAG.",
+        "محلل بيانات مبتدئ بخلفية أكاديمية في علم النفس وخبرة عملية من خلال مشروعات في تنظيف البيانات وتحليلها استكشافياً وتقسيم العملاء وتحليلات كرة القدم. أستخدم Python و SQL و Power BI و Excel لاكتشاف الأنماط وعرض النتائج التي تدعم اتخاذ قرارات أفضل.",
       differentiator:
-        "أجمع بين التفكير التحليلي وخلفية في علم النفس السلوكي لفهم البيانات والسلوك البشري الذي يقف خلفها.",
+        "أجمع بين التفكير التحليلي وفهم السلوك البشري والقدرة على التواصل الواضح لتفسير البيانات في سياقها الإنساني والعملي.",
       cta_projects: "استعرض المشاريع",
       cta_resume: "تحميل السيرة الذاتية",
       cta_linkedin: "لينكدإن",
@@ -350,14 +350,14 @@ export const translations = {
     about: {
       heading: "عني",
       kicker: "تحليلات بمنظور إنساني",
-      p1: "أنا عالم بيانات مبتدئ ومحلل بيانات بخلفية في علم النفس السلوكي، أركز على تحويل مجموعات البيانات المعقدة إلى رؤى واضحة تدعم اتخاذ قرارات أفضل.",
-      p2: "يغطي عملي دورة حياة التحليل كاملة — من تنظيف البيانات والتحليل الاستكشافي إلى استعلامات SQL وتطوير لوحات المعلومات والتحليل الإحصائي والتحليلات التنبؤية وسرد البيانات.",
-      p3: "أعمل باستخدام Python (Pandas و NumPy و scikit-learn و Plotly) و SQL و Power BI و Excel، وأبني أنظمة تعلم آلي وذكاء اصطناعي باستخدام PyTorch و TensorFlow/Keras و OpenCV والنماذج اللغوية الكبيرة.",
-      p4: "خلفيتي في علم النفس تمنحني منظوراً إضافياً عند تحليل سلوك العملاء والاتجاهات والأنماط والبيانات المرتكزة على الإنسان.",
+      p1: "أنا محلل بيانات مبتدئ بخلفية أكاديمية في علم النفس، أركز على استكشاف البيانات واكتشاف الأنماط وتحويل النتائج إلى رؤى واضحة تدعم اتخاذ قرارات أفضل.",
+      p2: "تشمل مشروعاتي تنظيف البيانات وتحليلها استكشافياً وتقسيم العملاء والاستعلام عن قواعد البيانات باستخدام SQL وإعداد تقارير مؤشرات الأداء وتطوير لوحات المعلومات، بدايةً من تجهيز البيانات الخام وحتى عرض النتائج العملية.",
+      p3: "أستخدم Python (Pandas و NumPy و Matplotlib و Seaborn و Plotly) و SQL و Power BI و Excel في التحليل والتصور البياني، ولدي أيضاً خبرة من خلال المشروعات في تطبيق تقنيات التعلم الآلي والذكاء الاصطناعي.",
+      p4: "دراستي لعلم النفس وخبرتي في الدعم السلوكي وتنمية مهارات الأطفال عززت قدرتي على ملاحظة الأنماط ومتابعة التقدم والتواصل بوضوح واهتمام.",
       cards: [
-        { label: "علم البيانات", value: "التعلم الآلي" },
-        { label: "علم النفس", value: "رؤية سلوكية" },
-        { label: "الذكاء الاصطناعي التطبيقي", value: "تحليلات ذكية" },
+        { label: "تحليل البيانات", value: "استخراج الرؤى" },
+        { label: "علم النفس", value: "فهم السلوك" },
+        { label: "ذكاء الأعمال", value: "التقارير ولوحات المعلومات" },
       ],
     },
     skills: {
@@ -609,11 +609,11 @@ export const translations = {
     },
     contact: {
       heading: "تواصل معي",
-      kicker: "متاح لفرص علم البيانات وتحليل البيانات وذكاء الأعمال",
+      kicker: "متاح لفرص محلل بيانات مبتدئ وتحليل البيانات وذكاء الأعمال",
       blurb: "أسرع طريقة للتواصل هي البريد الإلكتروني أو لينكدإن. أرد عادةً خلال يوم.",
       emailCta: "أرسل بريداً",
       whatsappCta: "واتساب",
     },
-    footer: { rights: "جميع الحقوق محفوظة.", quickLinks: "روابط سريعة", contactInfo: "معلومات التواصل", tagline: "عالم بيانات • محلل بيانات • الذكاء الاصطناعي التطبيقي" },
+    footer: { rights: "جميع الحقوق محفوظة.", quickLinks: "روابط سريعة", contactInfo: "معلومات التواصل", tagline: "محلل بيانات مبتدئ • تحليل البيانات • ذكاء الأعمال" },
   },
 } as const;
