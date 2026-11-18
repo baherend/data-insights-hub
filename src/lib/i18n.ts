@@ -382,9 +382,17 @@ export const translations = {
       heading: "المهارات والأدوات",
       kicker: "كفاءات في منظومة التحليل",
       groups: [
-        {
-          title: "تحليل البيانات",
-          items: [
+        { title: "تحليل البيانات", items: ["التحليل الاستكشافي", "تنظيف البيانات", "تجهيز البيانات", "التحليل الإحصائي", "تحليل الاتجاهات", "عرض قصص البيانات", "تقسيم العملاء", "التحليلات التنبؤية"] },
+        { title: "ذكاء الأعمال", items: ["Power BI", "DAX", "نمذجة البيانات", "لوحات مؤشرات الأداء", "Excel", "الجداول المحورية", "Power Query", "تقارير ذكاء الأعمال"] },
+        { title: "البرمجة والبيانات", items: ["Python", "Pandas", "NumPy", "scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SQL", "SQL Server", "Jupyter Notebook", "Git وGitHub", "مسارات ETL"] },
+        { title: "الذكاء الاصطناعي والتعلم الآلي", items: ["التعلم الآلي", "PyTorch", "TensorFlow", "Keras", "CNN", "LSTM", "الرؤية الحاسوبية", "OpenCV", "معالجة اللغة الطبيعية", "LLMs", "RAG", "Embeddings"] },
+      ],
+    },
+    projects: {
+      heading: "المشاريع المميزة",
+      kicker: "مشروعات في تحليل البيانات وذكاء الأعمال والذكاء الاصطناعي التطبيقي",
+      labels: { problem: "المشكلة", built: "نظرة عامة على المشروع", capabilities: "أهم القدرات", tech: "التقنيات", repo: "عرض على GitHub", noRepo: "لا يوجد مستودع عام" },
+      items: [
         {
           "category": "تحليل البيانات",
           "title": "تحليل مبيعات التجارة الإلكترونية وتقسيم العملاء",
