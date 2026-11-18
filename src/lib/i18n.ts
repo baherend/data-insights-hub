@@ -137,6 +137,8 @@ export const translations = {
         {
           "category": "Data Analytics",
           "title": "Retail E-Commerce Sales Analysis & Customer Segmentation",
+          "image": "/project-previews/ecommerce-analytics.svg",
+          "imageAlt": "Illustrative e-commerce analytics dashboard preview",
           "subtitle": "~542K transactions · EDA, customer segmentation & market basket analysis",
           "problem": "Raw retail transactions can hide the real sales picture when customer IDs are missing, duplicate rows and product returns are not handled carefully.",
           "built": "Analyzed approximately 542K retail transactions, handled 135K+ missing CustomerID values, removed 5,268 duplicate rows, and isolated 9,071 returns to support more reliable net-sales analysis. Explored hourly and daily demand, identified frequently co-purchased products, and grouped customers into three spending-frequency segments to develop practical marketing, merchandising and staffing recommendations.",
@@ -161,6 +163,8 @@ export const translations = {
         {
           "category": "Business Intelligence",
           "title": "End-to-End Data Analysis & Visualization",
+          "image": "/project-previews/sql-excel-bi.svg",
+          "imageAlt": "Illustrative SQL Server and Excel KPI dashboard preview",
           "subtitle": "SQL Server relational database · Excel KPI dashboard",
           "problem": "Business reporting is harder to maintain when data is spread across files without a consistent relational structure or clear KPI view.",
           "built": "Designed a relational database in SQL Server and developed an interactive Excel dashboard to organize information, monitor key performance indicators, and communicate findings through clear visual reporting. Project insights were also shared on LinkedIn.",
@@ -183,6 +187,8 @@ export const translations = {
         {
           "category": "Data Analytics · Football Performance",
           "title": "Football Analytics RAG System",
+          "image": "https://raw.githubusercontent.com/baherend/Football-Analytics-RAG-FULL/competition-portability/assets/football-rag-banner.png",
+          "imageAlt": "Football Analytics RAG project banner",
           "subtitle": "StatsBomb · FIFA World Cup 2022 baseline · EPL 2015/16 validation on development branch",
           "problem": "Football event data contains detailed match, team and player information, but answering performance questions reliably requires both structured statistical calculations and relevant contextual evidence.",
           "built": "Built a StatsBomb-based football analytics and RAG system. Its structured layer extracts and resolves metrics including xG, goals, assists, passing, passes under pressure, final-third passes, carries, pressures, defensive actions and goalkeeper actions. A hybrid retrieval layer combines BM25 with dense embeddings using Reciprocal Rank Fusion (RRF), while query routing directs numeric questions to structured calculations and descriptive questions to evidence retrieval. The competition-portability branch validates the pipeline on EPL 2015/16 in addition to the FIFA World Cup 2022 baseline.",
@@ -209,6 +215,8 @@ export const translations = {
         {
           "category": "Applied AI · Audio Signal Analysis",
           "title": "Audio Doctor: Stereo Call Review Prototype",
+          "image": "/project-previews/audio-doctor.svg",
+          "imageAlt": "Illustrative stereo call audio review timeline",
           "subtitle": "Arabic customer-service calls · acoustic and timing evidence only",
           "problem": "Team leaders need a structured way to review call activity, pauses, hold candidates and overlapping speech without relying only on manual listening.",
           "built": "Developed a Streamlit prototype that analyzes authorized stereo WAV recordings using a fixed left-agent/right-customer channel convention, 2-second windows and a 1-second hop. The pipeline combines RMS-based activity gating with a Wav2Vec2 vocal-activation classifier, then produces channel summaries, an activity timeline, heuristic Hold candidates, Dead Air and overlap alerts, and a consolidated Final Call Review with JSON/PDF export. It does not transcribe speech, infer sentiment, or perform speaker diarization.",
@@ -234,6 +242,8 @@ export const translations = {
         {
           "category": "Applied AI · Multimodal · Team Project",
           "title": "InterviewIQ: Multimodal Interview Intelligence Platform",
+          "image": "https://raw.githubusercontent.com/baherend/InterviewIQ/main/assets/interviewiq-banner.png",
+          "imageAlt": "InterviewIQ project banner",
           "subtitle": "Graduation project · team of 5 · individual contribution: Arabic speech-emotion model",
           "problem": "Interview practice benefits from feedback that considers both what a candidate says and how the answer is delivered, supported by traceable evidence rather than unsupported scores.",
           "built": "Contributed to a five-member team building a multimodal interview platform. My individual contribution was training an Arabic speech-emotion classifier using Wav2Vec2-XLSR-53 + BiLSTM on the BAVED dataset to classify Low, Neutral and High vocal-emotion intensity, improving Neutral-class precision from 0.79 to 0.86. The wider platform includes audio analysis, speech recognition and NLP, computer-vision components, and a multimodal fusion test harness; full persisted production fusion remains under development.",
@@ -262,6 +272,8 @@ export const translations = {
         {
           "category": "Deep Learning · Computer Vision · Team Project",
           "title": "Smart-City CCTV Violence Detection System",
+          "image": "https://raw.githubusercontent.com/baherend/Smart-City-CCTV-Violence-Detection/main/assets/scvd-banner.png",
+          "imageAlt": "Smart City CCTV project banner",
           "subtitle": "Team 4 · ResNet18 + LSTM · temporal CCTV video analysis",
           "problem": "Manually reviewing long CCTV recordings is time-consuming; security teams need tools that can highlight potentially relevant time segments for human review.",
           "built": "Team project developed by Team 4. The system classifies video windows into Normal, Violence and Weaponized classes using frozen ImageNet-pretrained ResNet18 frame features and a two-layer LSTM. It achieved 99.8% test accuracy on 477 predefined one-second test clips; on a separate 82-clip full-length test split, accuracy was 67.1% and Violence-class F1 was 0.00, showing a clear generalization limitation. The analysis dashboard adds sliding-window predictions, temporal smoothing, event merging, Plotly timelines, optional YOLO11n person boxes for visual context, and Arabic review reports. It is a human-review aid, not an aggressor-identification system.",
