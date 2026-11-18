@@ -131,98 +131,21 @@ export const translations = {
     },
     projects: {
       heading: "Featured Projects",
-      kicker: "Real analytics and applied AI case studies",
-      labels: { problem: "Problem", built: "What I built", capabilities: "Key capabilities", tech: "Technology", repo: "View on GitHub", noRepo: "Private / no public repository" },
+      kicker: "Data analytics, business intelligence, and applied AI case studies",
+      labels: { problem: "Problem", built: "Project overview", capabilities: "Key capabilities", tech: "Technology", repo: "View on GitHub", noRepo: "No public repository" },
       items: [
         {
-          "category": "Applied AI · Multimodal",
-          "title": "Interview IQ: Multimodal Interview Intelligence System",
-          "subtitle": "Graduation project · speech, text, and visual signals",
-          "problem": "Interview evaluation relies on subjective impressions rather than structured signals.",
-          "built": "Developed an AI platform that fuses speech, text, and visual signals into unified performance scores through separate NLP, computer vision, and audio pipelines, with a FastAPI backend.",
-          "capabilities": [
-            "Speech, text, and visual signal fusion",
-            "NLP, computer vision, and audio pipelines",
-            "LoRA fine-tuning of transformer models",
-            "FastAPI backend"
-          ],
-          "tech": [
-            "Python",
-            "PyTorch",
-            "OpenCV",
-            "Librosa",
-            "Transformers",
-            "FastAPI"
-          ],
-          "github": "https://github.com/baherend/InterviewIQ",
-          "featured": true
-        },
-        {
-          "category": "Deep Learning · Computer Vision",
-          "title": "Smart-City CCTV Violence Detection System",
-          "subtitle": "ResNet18 + LSTM video classification",
-          "problem": "Manual CCTV monitoring cannot scale across city-wide camera networks.",
-          "built": "Built a ResNet18 + LSTM video classifier in PyTorch for Normal, Violence, and Weaponized categories, reaching 99.8% test accuracy on the dataset's pre-segmented 1-second clips and evaluating full-length clips (67.1%) to expose generalization limits.",
-          "capabilities": [
-            "Normal / Violence / Weaponized classes",
-            "99.8% test accuracy on 1-second clips",
-            "67.1% on full-length clips (generalization check)",
-            "Interactive Plotly probability timeline"
-          ],
-          "tech": [
-            "Python",
-            "PyTorch",
-            "ResNet18",
-            "LSTM",
-            "OpenCV",
-            "scikit-learn",
-            "Plotly"
-          ],
-          "github": "https://github.com/baherend/Smart-City-CCTV-Violence-Detection",
-          "featured": true
-        },
-        {
-          "category": "Applied AI · Football Analytics",
-          "title": "Football Analytics RAG System",
-          "subtitle": "FIFA World Cup 2022 · StatsBomb data",
-          "problem": "Match event data is rich but hard to explore for non-technical users who just want to ask a question.",
-          "built": "Built a Retrieval-Augmented Generation system over StatsBomb FIFA World Cup 2022 data that allows users to ask natural-language questions about matches, players, and teams.",
-          "capabilities": [
-            "64 World Cup matches, 2,835 indexed documents",
-            "Hybrid information retrieval",
-            "BM25 lexical retrieval",
-            "Dense embeddings",
-            "Reciprocal Rank Fusion",
-            "Structured & semantic query routing",
-            "ChromaDB",
-            "LLM response generation",
-            "Streamlit interface"
-          ],
-          "tech": [
-            "Python",
-            "RAG",
-            "ChromaDB",
-            "BM25",
-            "Embeddings",
-            "Streamlit",
-            "OpenRouter"
-          ],
-          "github": "https://github.com/baherend/Football-Analytics-RAG-FULL",
-          "featured": true
-        },
-        {
           "category": "Data Analytics",
-          "title": "E-Commerce Sales Analysis",
-          "subtitle": "Exploratory analysis, segmentation & business insights",
-          "problem": "Understanding what drives revenue, which customers matter most, and how demand moves over time.",
-          "built": "End-to-end analytics project in Python on ~542K retail transactions covering data cleaning, exploratory data analysis, customer segmentation, market basket analysis, and time-based sales patterns.",
+          "title": "Retail E-Commerce Sales Analysis & Customer Segmentation",
+          "subtitle": "~542K transactions · EDA, customer segmentation & market basket analysis",
+          "problem": "Raw retail transactions can hide the real sales picture when customer IDs are missing, duplicate rows and product returns are not handled carefully.",
+          "built": "Analyzed approximately 542K retail transactions, handled 135K+ missing CustomerID values, removed 5,268 duplicate rows, and isolated 9,071 returns to support more reliable net-sales analysis. Explored hourly and daily demand, identified frequently co-purchased products, and grouped customers into three spending-frequency segments to develop practical marketing, merchandising and staffing recommendations.",
           "capabilities": [
-            "~542K transactions analyzed",
-            "5,268 duplicates removed, 9,071 returns isolated",
-            "Exploratory Data Analysis",
-            "Customer Segmentation (3 tiers)",
-            "Market Basket Analysis",
-            "Business Insights"
+            "Data cleaning and transaction-quality checks",
+            "Hourly and daily sales-pattern analysis",
+            "Customer segmentation using purchase frequency and monetary value",
+            "Market Basket Analysis and product associations",
+            "Actionable recommendations for marketing, merchandising and operations"
           ],
           "tech": [
             "Python",
@@ -236,50 +159,133 @@ export const translations = {
           "featured": true
         },
         {
-          "category": "Applied AI · Audio Signal Analysis",
-          "title": "Audio Doctor: Call Review Prototype",
-          "subtitle": "Arabic call-center calls · acoustic evidence only",
-          "problem": "Reviewing recorded customer-service calls manually is slow, and team leaders need objective evidence of call quality.",
-          "built": "Built a Streamlit prototype that lets call-center team leaders review recorded Arabic calls from acoustic and timing evidence only, with exportable JSON/PDF call reviews.",
+          "category": "Business Intelligence",
+          "title": "End-to-End Data Analysis & Visualization",
+          "subtitle": "SQL Server relational database · Excel KPI dashboard",
+          "problem": "Business reporting is harder to maintain when data is spread across files without a consistent relational structure or clear KPI view.",
+          "built": "Designed a relational database in SQL Server and developed an interactive Excel dashboard to organize information, monitor key performance indicators, and communicate findings through clear visual reporting. Project insights were also shared on LinkedIn.",
           "capabilities": [
-            "Stereo channel validation",
-            "RMS-based activity gating",
-            "Windowed vocal-activation classification (Wav2Vec2)",
-            "Hold and dead-air detection",
-            "Unit-tested pipeline"
+            "Relational database design",
+            "SQL querying",
+            "Excel dashboard development",
+            "KPI tracking and visualization",
+            "Business insight communication"
+          ],
+          "tech": [
+            "SQL Server",
+            "SQL",
+            "Microsoft Excel",
+            "Power Query"
+          ],
+          "github": "",
+          "featured": true
+        },
+        {
+          "category": "Data Analytics · Football Performance",
+          "title": "Football Analytics RAG System",
+          "subtitle": "StatsBomb · FIFA World Cup 2022 baseline · EPL 2015/16 validation on development branch",
+          "problem": "Football event data contains detailed match, team and player information, but answering performance questions reliably requires both structured statistical calculations and relevant contextual evidence.",
+          "built": "Built a StatsBomb-based football analytics and RAG system. Its structured layer extracts and resolves metrics including xG, goals, assists, passing, passes under pressure, final-third passes, carries, pressures, defensive actions and goalkeeper actions. A hybrid retrieval layer combines BM25 with dense embeddings using Reciprocal Rank Fusion (RRF), while query routing directs numeric questions to structured calculations and descriptive questions to evidence retrieval. The competition-portability branch validates the pipeline on EPL 2015/16 in addition to the FIFA World Cup 2022 baseline.",
+          "capabilities": [
+            "Structured match, team and player performance metrics",
+            "xG, passing, pressure, carries, defensive and goalkeeper statistics",
+            "Hybrid BM25 + dense retrieval with Reciprocal Rank Fusion",
+            "Structured and semantic query routing with evidence-aware answers",
+            "WC2022 retrieval benchmark (24 cases): 91.7% Hit@5 and 75.4% nDCG@5",
+            "Arabic-aware queries and EPL 2015/16 portability validation on the development branch"
           ],
           "tech": [
             "Python",
+            "StatsBomb Open Data",
+            "BM25",
+            "Sentence Transformers",
+            "ChromaDB",
+            "Streamlit",
+            "OpenRouter"
+          ],
+          "github": "https://github.com/baherend/Football-Analytics-RAG-FULL/tree/competition-portability",
+          "featured": true
+        },
+        {
+          "category": "Applied AI · Audio Signal Analysis",
+          "title": "Audio Doctor: Stereo Call Review Prototype",
+          "subtitle": "Arabic customer-service calls · acoustic and timing evidence only",
+          "problem": "Team leaders need a structured way to review call activity, pauses, hold candidates and overlapping speech without relying only on manual listening.",
+          "built": "Developed a Streamlit prototype that analyzes authorized stereo WAV recordings using a fixed left-agent/right-customer channel convention, 2-second windows and a 1-second hop. The pipeline combines RMS-based activity gating with a Wav2Vec2 vocal-activation classifier, then produces channel summaries, an activity timeline, heuristic Hold candidates, Dead Air and overlap alerts, and a consolidated Final Call Review with JSON/PDF export. It does not transcribe speech, infer sentiment, or perform speaker diarization.",
+          "capabilities": [
+            "Stereo input validation and channel-quality checks",
+            "RMS-based activity detection and time-aligned summaries",
+            "Three-class vocal-activation inference using Wav2Vec2",
+            "Prototype Hold, Dead Air and overlap evidence",
+            "Final Call Review with JSON and PDF export"
+          ],
+          "tech": [
+            "Python",
+            "Streamlit",
             "PyTorch",
             "Wav2Vec2",
-            "Streamlit",
+            "NumPy",
+            "ReportLab",
             "pytest"
           ],
           "github": "https://github.com/baherend/audio-review",
           "featured": false
         },
         {
-          "category": "Business Intelligence",
-          "title": "End-to-End Data Analysis & Visualization",
-          "subtitle": "SQL Server database + Excel KPI dashboard",
-          "problem": "Reporting spread across flat files with no consistent data model or KPI definitions.",
-          "built": "Designed a relational database using SQL Server and developed an interactive Excel dashboard for KPI analysis and business insights.",
+          "category": "Applied AI · Multimodal · Team Project",
+          "title": "InterviewIQ: Multimodal Interview Intelligence Platform",
+          "subtitle": "Graduation project · team of 5 · individual contribution: Arabic speech-emotion model",
+          "problem": "Interview practice benefits from feedback that considers both what a candidate says and how the answer is delivered, supported by traceable evidence rather than unsupported scores.",
+          "built": "Contributed to a five-member team building a multimodal interview platform. My individual contribution was training an Arabic speech-emotion classifier using Wav2Vec2-XLSR-53 + BiLSTM on the BAVED dataset to classify Low, Neutral and High vocal-emotion intensity, improving Neutral-class precision from 0.79 to 0.86. The wider platform includes audio analysis, speech recognition and NLP, computer-vision components, and a multimodal fusion test harness; full persisted production fusion remains under development.",
           "capabilities": [
-            "SQL Server",
-            "Data Modeling",
-            "Excel",
-            "Dashboard Development",
-            "KPIs",
-            "Business Insights"
+            "Arabic speech-emotion model training (individual contribution)",
+            "Neutral-class precision improved from 0.79 to 0.86",
+            "Audio delivery analysis and speech recognition",
+            "Evidence-based NLP answer evaluation",
+            "Computer-vision analysis and multimodal fusion test harness"
           ],
           "tech": [
-            "SQL Server",
-            "Excel",
-            "Power Query"
+            "Python",
+            "PyTorch",
+            "Wav2Vec2-XLSR-53",
+            "BiLSTM",
+            "BAVED",
+            "Transformers",
+            "Librosa",
+            "FastAPI",
+            "React",
+            "PostgreSQL"
           ],
-          "github": "",
+          "github": "https://github.com/baherend/InterviewIQ",
           "featured": false
         },
+        {
+          "category": "Deep Learning · Computer Vision · Team Project",
+          "title": "Smart-City CCTV Violence Detection System",
+          "subtitle": "Team 4 · ResNet18 + LSTM · temporal CCTV video analysis",
+          "problem": "Manually reviewing long CCTV recordings is time-consuming; security teams need tools that can highlight potentially relevant time segments for human review.",
+          "built": "Team project developed by Team 4. The system classifies video windows into Normal, Violence and Weaponized classes using frozen ImageNet-pretrained ResNet18 frame features and a two-layer LSTM. It achieved 99.8% test accuracy on 477 predefined one-second test clips; on a separate 82-clip full-length test split, accuracy was 67.1% and Violence-class F1 was 0.00, showing a clear generalization limitation. The analysis dashboard adds sliding-window predictions, temporal smoothing, event merging, Plotly timelines, optional YOLO11n person boxes for visual context, and Arabic review reports. It is a human-review aid, not an aggressor-identification system.",
+          "capabilities": [
+            "Three-class video classification: Normal, Violence and Weaponized",
+            "99.8% on predefined one-second clips; 67.1% on full-length clips",
+            "Sliding-window analysis, temporal smoothing and incident timelines",
+            "Plotly probability charts and Arabic review reports",
+            "YOLO11n person boxes for scene context only"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "ResNet18",
+            "LSTM",
+            "OpenCV",
+            "YOLO11n",
+            "Plotly",
+            "Gradio",
+            "Streamlit"
+          ],
+          "github": "https://github.com/baherend/Smart-City-CCTV-Violence-Detection",
+          "featured": false
+        }
       ],
     },
     education: {
@@ -366,20 +372,159 @@ export const translations = {
       groups: [
         {
           title: "تحليل البيانات",
-          items: ["التحليل الاستكشافي", "تنظيف البيانات", "معالجة البيانات", "التحليل الإحصائي", "تحليل الاتجاهات", "سرد البيانات", "تقسيم العملاء", "التحليلات التنبؤية"],
+          items: [
+        {
+          "category": "تحليل البيانات",
+          "title": "تحليل مبيعات التجارة الإلكترونية وتقسيم العملاء",
+          "subtitle": "نحو 542 ألف معاملة · تحليل استكشافي وتقسيم العملاء وتحليل سلة المشتريات",
+          "problem": "قد تخفي معاملات البيع الصورة الحقيقية للأداء عند وجود معرّفات عملاء مفقودة أو سجلات مكررة أو مرتجعات لم تتم معالجتها بشكل صحيح.",
+          "built": "حللت نحو 542 ألف معاملة بيع، وتعاملت مع أكثر من 135 ألف قيمة مفقودة في CustomerID، وأزلت 5,268 سجلًا مكررًا، وعزلت 9,071 معاملة مرتجعة لدعم تحليل أدق لصافي المبيعات. درست أنماط الطلب حسب الساعة واليوم، وحددت المنتجات التي تُشترى معًا، وقسمت العملاء إلى ثلاث شرائح وفق تكرار الشراء وقيمته، ثم استخلصت توصيات عملية للتسويق والعرض والعمليات.",
+          "capabilities": [
+            "تنظيف البيانات والتحقق من جودة المعاملات",
+            "تحليل أنماط المبيعات حسب الساعة واليوم",
+            "تقسيم العملاء وفق تكرار الشراء والقيمة المالية",
+            "تحليل سلة المشتريات والعلاقات بين المنتجات",
+            "توصيات قابلة للتنفيذ للتسويق والعرض والعمليات"
+          ],
+          "tech": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Seaborn",
+            "Jupyter Notebook"
+          ],
+          "github": "https://github.com/baherend/E-Commerce-Sales-Analysis",
+          "featured": true
         },
         {
-          title: "ذكاء الأعمال",
-          items: ["Power BI", "DAX", "نمذجة البيانات", "لوحات مؤشرات الأداء", "Excel", "الجداول المحورية", "Power Query", "تقارير ذكاء الأعمال"],
+          "category": "ذكاء الأعمال",
+          "title": "مشروع متكامل لتحليل البيانات وتصورها",
+          "subtitle": "قاعدة بيانات علائقية باستخدام SQL Server · لوحة مؤشرات Excel",
+          "problem": "تصبح التقارير أصعب في الإدارة عندما تكون البيانات موزعة بين ملفات متعددة دون هيكل علائقي موحد أو متابعة واضحة لمؤشرات الأداء.",
+          "built": "صممت قاعدة بيانات علائقية باستخدام SQL Server وطورت لوحة Excel تفاعلية لتنظيم المعلومات ومتابعة مؤشرات الأداء الرئيسية وعرض النتائج بصريًا. كما شاركت رؤى المشروع على LinkedIn.",
+          "capabilities": [
+            "تصميم قواعد البيانات العلائقية",
+            "كتابة استعلامات SQL",
+            "تطوير لوحات معلومات باستخدام Excel",
+            "متابعة مؤشرات الأداء والتصور البياني",
+            "عرض رؤى الأعمال"
+          ],
+          "tech": [
+            "SQL Server",
+            "SQL",
+            "Microsoft Excel",
+            "Power Query"
+          ],
+          "github": "",
+          "featured": true
         },
         {
-          title: "البرمجة والبيانات",
-          items: ["Python", "Pandas", "NumPy", "scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SQL", "SQL Server", "Jupyter Notebook", "Git & GitHub", "خطوط ETL"],
+          "category": "تحليل البيانات · تحليلات كرة القدم",
+          "title": "نظام تحليلات كرة القدم المعزز بالاسترجاع RAG",
+          "subtitle": "بيانات StatsBomb · كأس العالم 2022 · التحقق من الدوري الإنجليزي 2015/16 على فرع التطوير",
+          "problem": "تحتوي بيانات أحداث كرة القدم على تفاصيل دقيقة عن المباريات والفرق واللاعبين، لكن الإجابة الموثوقة عن أسئلة الأداء تحتاج إلى حسابات إحصائية منظمة واسترجاع للسياق المناسب.",
+          "built": "طورت نظامًا لتحليلات كرة القدم يعتمد على بيانات StatsBomb ونموذج RAG. تستخرج الطبقة المنظمة وتحسب مؤشرات مثل xG والأهداف والتمريرات والتمريرات تحت الضغط وتمريرات الثلث الأخير والانطلاقات بالكرة والضغط والأفعال الدفاعية وإحصاءات حراس المرمى. وتجمع طبقة الاسترجاع الهجين بين BM25 والتمثيلات المتجهة باستخدام Reciprocal Rank Fusion، مع توجيه الأسئلة الرقمية إلى الحسابات المنظمة والأسئلة الوصفية إلى استرجاع الأدلة. وقد تم التحقق من قابلية تشغيل المسار على موسم الدوري الإنجليزي 2015/16 في فرع competition-portability بجانب خط الأساس لكأس العالم 2022.",
+          "capabilities": [
+            "استخراج مؤشرات أداء منظمة للمباريات والفرق واللاعبين",
+            "إحصاءات xG والتمريرات والضغط والانطلاقات والأفعال الدفاعية والحراس",
+            "استرجاع هجين يجمع BM25 والتمثيلات المتجهة وRRF",
+            "توجيه الأسئلة المنظمة والدلالية مع إجابات مدعومة بالأدلة",
+            "تقييم استرجاع كأس العالم 2022 على 24 حالة: Hit@5 بنسبة 91.7% وnDCG@5 بنسبة 75.4%",
+            "دعم الاستعلامات العربية والتحقق من قابلية التشغيل على الدوري الإنجليزي في فرع التطوير"
+          ],
+          "tech": [
+            "Python",
+            "StatsBomb Open Data",
+            "BM25",
+            "Sentence Transformers",
+            "ChromaDB",
+            "Streamlit",
+            "OpenRouter"
+          ],
+          "github": "https://github.com/baherend/Football-Analytics-RAG-FULL/tree/competition-portability",
+          "featured": true
         },
         {
-          title: "الذكاء الاصطناعي والتعلم الآلي",
-          items: ["التعلم الآلي", "scikit-learn", "PyTorch", "TensorFlow", "Keras", "CNN", "LSTM", "الرؤية الحاسوبية", "OpenCV", "معالجة اللغة", "النماذج اللغوية الكبيرة", "RAG", "التمثيلات المتجهة"],
+          "category": "ذكاء اصطناعي تطبيقي · تحليل الإشارات الصوتية",
+          "title": "Audio Doctor: نموذج أولي لمراجعة المكالمات",
+          "subtitle": "مكالمات خدمة عملاء عربية · أدلة صوتية وزمنية فقط",
+          "problem": "يحتاج قادة الفرق إلى طريقة منظمة لمراجعة نشاط المكالمة وفترات الانتظار والصمت وتداخل الكلام بدل الاعتماد على الاستماع اليدوي وحده.",
+          "built": "طورت نموذجًا أوليًا باستخدام Streamlit لتحليل ملفات WAV ثنائية القناة المصرح باستخدامها، وفق convention ثابت: القناة اليسرى للموظف واليمنى للعميل، مع نوافذ مدتها ثانيتان وخطوة زمنية ثانية واحدة. يجمع المسار بين قياس النشاط باستخدام RMS ومصنف Wav2Vec2 لمستويات النشاط الصوتي، ثم ينتج ملخصات لكل قناة وخطًا زمنيًا للنشاط ومؤشرات انتظار تقديرية وتنبيهات للصمت والتداخل ومراجعة نهائية للمكالمة قابلة للتصدير بصيغتي JSON وPDF. لا يقوم المشروع بتفريغ الكلام إلى نص أو استنتاج المشاعر أو تمييز المتحدثين.",
+          "capabilities": [
+            "التحقق من ملف الاستريو وجودة القنوات",
+            "تحديد النشاط باستخدام RMS وملخصات زمنية",
+            "تصنيف النشاط الصوتي إلى ثلاث فئات باستخدام Wav2Vec2",
+            "مؤشرات أولية للانتظار والصمت وتداخل الكلام",
+            "مراجعة نهائية للمكالمة مع تصدير JSON وPDF"
+          ],
+          "tech": [
+            "Python",
+            "Streamlit",
+            "PyTorch",
+            "Wav2Vec2",
+            "NumPy",
+            "ReportLab",
+            "pytest"
+          ],
+          "github": "https://github.com/baherend/audio-review",
+          "featured": false
         },
+        {
+          "category": "ذكاء اصطناعي تطبيقي · متعدد الوسائط · مشروع جماعي",
+          "title": "InterviewIQ: منصة ذكاء اصطناعي لتحليل المقابلات",
+          "subtitle": "مشروع التخرج · فريق من 5 أفراد · مساهمتي: نموذج تحليل الانفعال الصوتي العربي",
+          "problem": "يستفيد التدريب على المقابلات من تقييم يراعي محتوى إجابة المرشح وطريقة إلقائها، مع الاعتماد على أدلة قابلة للتتبع بدلًا من درجات غير مدعومة.",
+          "built": "شاركت ضمن فريق من خمسة أفراد في تطوير منصة متعددة الوسائط لتحليل المقابلات. كانت مساهمتي الفردية تدريب مصنف عربي لتحليل الانفعال الصوتي باستخدام Wav2Vec2-XLSR-53 مع BiLSTM على مجموعة بيانات BAVED، لتصنيف شدة الانفعال الصوتي إلى منخفض ومحايد ومرتفع، مع تحسين Precision للفئة المحايدة من 0.79 إلى 0.86. وتشمل المنصة الأوسع تحليل الصوت والتعرف على الكلام ومعالجة اللغة والرؤية الحاسوبية وبيئة اختبار لدمج الوسائط؛ أما الدمج الإنتاجي الكامل مع حفظ النتائج فما زال قيد التطوير.",
+          "capabilities": [
+            "تدريب نموذج تحليل الانفعال الصوتي العربي (مساهمتي الفردية)",
+            "تحسين Precision للفئة المحايدة من 0.79 إلى 0.86",
+            "تحليل الصوت والتعرف على الكلام",
+            "تقييم الإجابات باستخدام NLP والأدلة المرجعية",
+            "تحليل الرؤية الحاسوبية وبيئة اختبار الدمج متعدد الوسائط"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "Wav2Vec2-XLSR-53",
+            "BiLSTM",
+            "BAVED",
+            "Transformers",
+            "Librosa",
+            "FastAPI",
+            "React",
+            "PostgreSQL"
+          ],
+          "github": "https://github.com/baherend/InterviewIQ",
+          "featured": false
+        },
+        {
+          "category": "تعلم عميق · رؤية حاسوبية · مشروع جماعي",
+          "title": "نظام كشف العنف من كاميرات المدن الذكية",
+          "subtitle": "الفريق الرابع · ResNet18 + LSTM · تحليل زمني لفيديوهات المراقبة",
+          "problem": "تستغرق مراجعة تسجيلات كاميرات المراقبة الطويلة يدويًا وقتًا كبيرًا؛ وتحتاج فرق الأمن إلى أدوات تحدد المقاطع الزمنية التي تستحق المراجعة البشرية.",
+          "built": "مشروع جماعي نفذه الفريق الرابع. يصنف النظام نوافذ الفيديو إلى طبيعي وعنف وعنف مسلح باستخدام خصائص إطارات مستخرجة من ResNet18 مدرب مسبقًا ومجمّد، تليها شبكة LSTM من طبقتين. حقق دقة 99.8% على 477 مقطع اختبار محدد مسبقًا بطول ثانية واحدة؛ بينما بلغت الدقة 67.1% على مجموعة اختبار منفصلة من 82 مقطعًا كاملًا، مع F1 يساوي صفرًا لفئة العنف، ما يوضح وجود محدودية في التعميم. وتضيف لوحة التحليل التنبؤ عبر نوافذ زمنية متداخلة وتنعيم الاحتمالات ودمج الأحداث ومخططات Plotly ومربعات YOLO11n للأشخاص بغرض إظهار سياق المشهد وتقارير مراجعة عربية. النظام أداة مساعدة للمراجعة البشرية وليس لتحديد المعتدي.",
+          "capabilities": [
+            "تصنيف الفيديو إلى طبيعي وعنف وعنف مسلح",
+            "دقة 99.8% على المقاطع المحددة بطول ثانية و67.1% على المقاطع الكاملة",
+            "تحليل النوافذ الزمنية وتنعيم النتائج وإنشاء خط زمني للحوادث",
+            "مخططات احتمالات بـ Plotly وتقارير مراجعة عربية",
+            "مربعات YOLO11n لإظهار الأشخاص في المشهد فقط"
+          ],
+          "tech": [
+            "Python",
+            "PyTorch",
+            "ResNet18",
+            "LSTM",
+            "OpenCV",
+            "YOLO11n",
+            "Plotly",
+            "Gradio",
+            "Streamlit"
+          ],
+          "github": "https://github.com/baherend/Smart-City-CCTV-Violence-Detection",
+          "featured": false
+        }
       ],
     },
     tools: { heading: "أدوات البيانات التي أستخدمها", kicker: "بيئة العمل اليومية" },
@@ -434,8 +579,8 @@ export const translations = {
     },
     projects: {
       heading: "المشاريع المميزة",
-      kicker: "دراسات حالة حقيقية في التحليل والذكاء الاصطناعي",
-      labels: { problem: "المشكلة", built: "ما بنيته", capabilities: "أهم القدرات", tech: "التقنيات", repo: "عرض على GitHub", noRepo: "مستودع غير عام" },
+      kicker: "دراسات في تحليل البيانات وذكاء الأعمال والذكاء الاصطناعي التطبيقي",
+      labels: { problem: "المشكلة", built: "نظرة عامة على المشروع", capabilities: "أهم القدرات", tech: "التقنيات", repo: "عرض على GitHub", noRepo: "لا يوجد مستودع عام" },
       items: [
         {
           "category": "ذكاء اصطناعي تطبيقي · متعدد الوسائط",
